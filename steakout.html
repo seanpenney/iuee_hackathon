@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="steakout.css" />
+		<script src="http://code.jquery.com/jquery-latest.min.js"
+		type="text/javascript"></script>
+	</head>
+	
+	<body background="background.png">
+	
+		<audio id="cow_moo" src="cow_moo.wav"></audio>
+	
+		<div id="container">
+			<div id="header">
+				<h1>STEAK OUT</h1>
+				<div id="audio">
+					<audio controls="controls" preload="auto" loop><source src="banjo.mp3" /></audio>
+				</div>
+			</div>
+			
+			<div id="content-container">
+				<div id="nav-bar">
+					<ul>
+						<li><div style="cursor:pointer" onclick="window.location='displayscores.php'">Hi Scores</div></li>
+						<li><div style="cursor:pointer" onclick="window.location='healthinfo.html'">Health Info</div></li>
+						<li><div style="cursor:pointer" onclick="window.location='about.html'">About</div></li>
+					</ul>
+				</div>
+				
+				<div id="content">
+					<div id="game">
+						<canvas  id="myCanvas" width="960" height="460"></canvas>
+						<script src="steakout.js"></script>
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+			<p>Use arrow keys to get to the right of the map, dodging the hormone injector and other enemies</p>
+			<p>If you collide with an enemy, you can stay on the same level by moving to the correct answer</p>
+			<p>Be careful, as you advance through the levels the enemies will become faster</p>
+			<p>Running into the mud patches or tires will slow you down</p>
+			</div>
+		</div>
+	</body>
+</html>
